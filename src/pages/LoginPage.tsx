@@ -21,6 +21,7 @@ type Form = z.infer<typeof schema>;
 export function LoginPage() {
   const { login, user } = useAuth();
   const nav = useNavigate();
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const loc = useLocation() as any;
 
   const {
