@@ -5,9 +5,9 @@ import { LoginPage } from "./pages/LoginPage";
 import { RegisterPage } from "./pages/RegisterPage";
 import { ListingDetailPage } from "./pages/ListingDetailPage";
 import { HostDashboardPage } from "./pages/HostDashboardPage";
-//import { CreateListingPage } from "./pages/CreateListingPage";
+import { CreateListingPage } from "./pages/CreateListingPage";
 import { MyTripsPage } from "./pages/MyTripsPage";
-//import { NotFoundPage } from "./pages/NotFoundPage";
+import { NotFoundPage } from "./pages/NotFoundPage";
 import { ProtectedRoute } from "./router/ProtectedRoute";
 
 export const router = createBrowserRouter([
@@ -24,11 +24,11 @@ export const router = createBrowserRouter([
         children: [
           { path: "/trips", element: <MyTripsPage /> },
           { path: "/host", element: <HostDashboardPage /> },
-          //{ path: "/host/new", element: <CreateListingPage /> },
+          { path: "/host/new", element: <CreateListingPage /> },
         ],
       },
 
-      //{ path: "*", element: <NotFoundPage /> },
+      { path: "*", element: <NotFoundPage /> },
     ],
   },
 ]);
