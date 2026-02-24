@@ -5,7 +5,7 @@ import { Toaster } from "react-hot-toast" // Import the Tailwind CSS styles
 import "./styles.css"
 import {router} from "./router"
 import { AuthProvider } from "./state/auth/AuthProvider"
-import { ErrorBoundary } from "./state/error/ErrorBoundary"
+import { ErrorBoundary } from "./state/errors/ErrorBoundary"
 
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
